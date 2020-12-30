@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This app generates a random 8 digit number, which has unique digits, using recursion. There is also one more functionality, which gives various differences between current date and a past date"
+    />
+    <meta name="keywords" , content="recursion, date, javascript, DOM, random number generation using recursion, compare dates in javascript" />
+
+    <title>Random Number</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button type="button" class="btn btn-primary btn-center" id="generate" onclick="generate()">Generate</button>
+      <h1 id="number" class="center"></h1>
+
+      <br />
+      <input type="date" placeholder="Enter your DOB" id="date" />
+      <button type="button" class="btn btn-primary" onclick="compare()">Compare</button>
+
+      <table id="my-table" class="table">
+        <thead>
+          <tr>
+            <th>Day Count</th>
+            <th>Year Difference</th>
+            <th>Month Difference</th>
+            <th>Minutes Difference</th>
+            <th>Seconds Difference</th>
+            <th>Millis Difference</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
